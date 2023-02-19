@@ -20,14 +20,14 @@ public class Flower extends Canvas {
     public static int startFlowerStemX;
     public static int startFlowerStemY;
     public static int [][] branchGrid;
-    public static int numberOfStems = 50;
+    public static int numberOfStems = (int)((Math.random() * 30) + 10);
     public static int [] flowerChosen;
 
 
 
     public void paint(Graphics g){
         g.setFont(new Font("default" , Font.BOLD , 50));
-        g.drawString("Happy Valentines Day Mommy :)" , 300 , 200);
+        g.drawString("Happy Valentines Day" , 310 , 200);
 
         //drawing the stem
         g.setColor(Color.decode("#964B00"));
